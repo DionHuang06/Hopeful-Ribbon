@@ -1,0 +1,49 @@
+body {
+    font-family: Papyrus, Fantasy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0;
+    background-color: #c5d5e3;
+}
+
+
+.search-bar-container {
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 560px;
+    padding: 10px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #f1f3f4;
+}
+
+h1 {
+    color: rgb(110, 167, 225);
+    font-size: 70px;
+}
+
+

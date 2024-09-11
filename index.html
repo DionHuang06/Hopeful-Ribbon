@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Droid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Discount Droid</h1>
+    </header>
+    <div class="search-bar-container">
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search any item">
+    </div>
+
+    <script>
+        let currentInput = '';
+
+        document.getElementById('searchInput').addEventListener('input', function(event) {
+            currentInput = event.target.value;
+        });
+
+        document.getElementById('searchInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                window.location.href = `search.html?query=${encodeURIComponent(currentInput)}`;
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
